@@ -1,6 +1,12 @@
-<%= form_tag screenshots_path, method: :get do %>
-  <%= label_tag :url %>
-  <%= text_field_tag :url %>
-  <%= select_tag :format, options_from_collection_for_select([:png, :png, :gif], :to_s, :to_s)  %>
-  <%= submit_tag 'Get Screenshot' %>
-<% end %>
+<div class="row">
+  <div class="col-md-12">
+
+  <%= form_tag screenshots_path, method: :get do %>
+    <%= label_tag :url %>
+    <%= text_field_tag :url %>
+    <%= select_tag :format, options_from_collection_for_select([:png, :png, :gif], :to_s, :to_s)  %>
+    <%= submit_tag 'Get Screenshot' %>
+  <% end %>
+
+  </div>
+</div>
